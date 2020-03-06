@@ -1,0 +1,15 @@
+{
+  "name": "node-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "kill-inspector": "kill $(lsof -t -i:9229)",
+    "app": "nodemon --inspect --ignore 'local' index.js",
+    "start": "NODE_ENV=development npm run app",
+    "start-production": "NODE_ENV=production npm run app",
+  },
+  "author": "",
+  "license": "ISC"
+}
